@@ -1,9 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import svgClose from '../../images/close.svg'
-import Button from '../Button'
-
 const ModalStyled = styled.div`
   display: ${ props => props.visible ? 'block' : 'none' };
   width: 600px;
@@ -19,19 +16,8 @@ const ModalStyled = styled.div`
   box-shadow: 0 0 1px 1px rgba(0,0,0,.2);
 `
 
-const Close = styled.img`
-  width: 30px;
-  height: 30px;
-  margin: 10px;
-`
-
-const Content = ({ children, visible, toggleVisibility }) => (
+const Content = ({ visible, children }) => (
   <ModalStyled visible={ visible }>
-    <Close
-      onClick={ toggleVisibility }
-      src={ svgClose }
-    />
-
     { children }
   </ModalStyled>
 )
