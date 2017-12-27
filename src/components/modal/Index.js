@@ -1,17 +1,19 @@
 import React from 'react'
-import styled from 'styled-components'
 
 import Overlay from './Overlay'
 import Content from './Content'
 
-const Index = (props) => (
+const Index = ({ visible, toggleVisibility, children }) => (
   <div>
     <Overlay
-      visible={ props.visible }
-      onClick={ props.toggleVisibility }
+      visible={ visible }
+      toggleVisibility={ toggleVisibility }
     />
 
-    <Content { ...props } />
+    <Content
+      visible={ visible }
+      children={ children }
+    />
   </div>
 )
 

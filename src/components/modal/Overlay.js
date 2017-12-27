@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import svgClose from '../../images/close.svg'
+
 const OverlayStyled = styled.div`
   display: ${ props => props.visible ? 'block' : 'none' };
   position: fixed;
@@ -9,7 +11,19 @@ const OverlayStyled = styled.div`
   width: 100%;
   height: 100%;
   z-index: 50;
-  background: rgba(0,0,0,.6);
+  background: rgba(0,0,0,.75);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    background-image: url(${svgClose});
+    cursor: pointer;
+  }
 `
 
 const Overlay = ({ visible, toggleVisibility }) => (
