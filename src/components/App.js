@@ -1,8 +1,12 @@
 import React from 'react'
 import Header from './header/Index'
+import Main from './Main'
 
 const App = () => (
-  <Header />
+  <div>
+    <Header />
+    <Main />
+  </div>
 )
 
 export default App
