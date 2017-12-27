@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const ModalStyled = styled.div`
+const StructureStyled = styled.div`
   display: ${ props => props.visible ? 'block' : 'none' };
-  width: 900px;
-  max-width: 90%;
-  height: 450px;
+  width: 850px;
+  max-width: 95%;
+  height: 550px;
   max-height: 90%;
   position: fixed;
   z-index: 100;
@@ -14,10 +14,10 @@ const ModalStyled = styled.div`
   transform: translate(-50%, -50%);
 `
 
-const Content = ({ visible, children }) => (
-  <ModalStyled visible={ visible }>
+const Structure = ({ visible, children }) => (
+  <StructureStyled visible={ visible }>
     { children }
-  </ModalStyled>
+  </StructureStyled>
 )
 
-export default Content
+export default Structure
