@@ -21,7 +21,7 @@ const OverlayStyled = styled.div`
     width: 20px;
     height: 20px;
     margin: 10px;
-    background-image: url(${svgClose});
+    background-image: url(${ svgClose });
     cursor: pointer;
   }
 `

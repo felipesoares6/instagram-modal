@@ -8,7 +8,7 @@ const PhotoStyled = styled.img`
   height: 80%;
 
   @media (min-width: 768px) {
-    width: 65%;
+    width: 60%;
     height: 100%;
   }
 `
