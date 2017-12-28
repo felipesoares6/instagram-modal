@@ -12,7 +12,7 @@ const Container = styled.div`
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
-  border-bottom: 1.5px solid #efefef;
+  border-bottom: 1.2px solid #efefef;
 `
 
 const Profile = () => (

@@ -7,24 +7,21 @@ const Container = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: .875rem;
+  font-weight:bold;
 `
 
 const Photo = styled.img`
   height: 40px;
   width: 40px;
   border-radius: 150%;
-`
-
-const Name = styled.h1`
-  letter-spacing: 1px;
-  font-size: .875rem;
-  margin-left: 10px;
+  margin-right: 10px;
 `
 
 const User = () => (
   <Container>
     <Photo src={ avatar } />
-    <Name> felipesoares </Name>
+    <span> felipesoares </span>
   </Container>
 )
 
