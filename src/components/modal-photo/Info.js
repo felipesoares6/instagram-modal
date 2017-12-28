@@ -11,12 +11,12 @@ const Container = styled.div`
   justify-content: flex-start;
   background-color: #fff;
   width: 100%;
-  height: 20%;
+  height: 40%;
   padding-left: 20px;
   padding-right: 20px;
 
   @media (min-width: 768px) {
-    width: 35%;
+    width: 40%;
     height: 100%;
   }
 `

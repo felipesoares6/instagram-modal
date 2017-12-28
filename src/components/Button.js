@@ -6,7 +6,7 @@ const ButtonStyled = styled.button`
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 2px;
-  padding: ${ props => props.large ? '10px 20px' : '5px 10px' };
+  padding: ${ props => props.large ? '10px 20px' : '3px 8px' };
   font-weight: bold;
   font-size: 14px;
 `
