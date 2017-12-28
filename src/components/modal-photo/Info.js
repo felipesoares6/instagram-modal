@@ -2,8 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Profile from './Profile'
+import Footer from './Footer'
+import Interactions from './Interactions'
 
 const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   background-color: #fff;
   width: 100%;
   height: 20%;
@@ -19,6 +24,10 @@ const Container = styled.div`
 const Info = () => (
   <Container>
     <Profile />
+
+    <Interactions />
+
+    <Footer />
   </Container>
 )
 
