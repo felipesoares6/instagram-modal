@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+
 import avatar from '../../images/avatar.png'
 
 const Container = styled.div`
@@ -9,9 +10,6 @@ const Container = styled.div`
 `
 
 const Photo = styled.img`
-  background-image: url(${ avatar });
-  background-position: center;
-  background-size: cover;
   height: 40px;
   width: 40px;
   border-radius: 150%;
