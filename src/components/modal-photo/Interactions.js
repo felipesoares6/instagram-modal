@@ -5,7 +5,7 @@ import Likes from './Likes'
 
 const Container = styled.div`
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 13px;
 `
 
 const CommentsStyled = styled.div`
