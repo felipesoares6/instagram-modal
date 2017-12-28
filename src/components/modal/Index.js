@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Overlay from './Overlay'
-import Content from './Content'
+import Structure from './Structure'
 
 const Index = ({ visible, toggleVisibility, children }) => (
   <div>
@@ -10,7 +10,7 @@ const Index = ({ visible, toggleVisibility, children }) => (
       toggleVisibility={ toggleVisibility }
     />
 
-    <Content
+    <Structure
       visible={ visible }
       children={ children }
     />

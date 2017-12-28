@@ -3,7 +3,7 @@ import { withState, withHandlers, compose, pure } from 'recompose'
 import styled from 'styled-components'
 
 import Button from './Button'
-import Modal from './modal/Index'
+import ModalPhoto from './modal-photo/Index'
 
 const Container = styled.div`
   display: flex;
@@ -15,13 +15,17 @@ const Container = styled.div`
 
 const MainPure = ({ isModalVisible, toggleModalVisibility }) => (
   <Container>
-    <Modal
-      visible={ isModalVisible }
-      toggleVisibility={ toggleModalVisibility }>
-    </Modal>
+    <ModalPhoto
+      isModalVisible={ isModalVisible }
+      toggleModalVisibility={ toggleModalVisibility }
+    />
 
-    <Button onClick={ toggleModalVisibility }>
-      Open the modal!
+    <Button
+      onClick={ toggleModalVisibility }
+      uppercase
+      large
+    >
+      Open the modal
     </Button>
   </Container>
 )
